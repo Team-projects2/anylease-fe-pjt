@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lease/equipement details</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+        
+</head>
+<body>
+    <div class="lease-nav">
+        <p class="arrow">&#8592</p>
+        <p class="lease">Lease</p>
+    </div>
+    <span class="info-nav">
+        <p class="link">Details</p>
+        <p class="link active">Price & Location</p>
+        <p class="link">Upload</p>
+        <p class="link">Summary</p>
+    </span>
+    <form class="info-content" method="post" action="Upload.html">
+        <label for="price">Price($)</label>
+                    <input name="price" type="number" placeholder="$1000" required />
+                    <label for="payment">decription</label>
+                    <input name="payment" list="methodOfPayment" type="text" placeholder="method of payment" required/>
+                    <datalist id="methodOfPayment">
+                        <option value="card">
+                        <option value="transaction">
+                        <option value="online">
+                    </datalist>
+                    <label for="delivery">Method of delivery</label>
+                    <input name="delivery" list="methodOfdelivery" type="text" placeholder="method of delivery" required/>
+                    <datalist id="methodOfdelivery">
+                        <option value="vehicle">
+                        <option value="ship">
+                        <option value="order">
+                    </datalist>
+                    <label for="location">Location</label>
+                    <input name="location" list="location" type="text" placeholder="method of payment" required/>
+                    <datalist id="location">
+                        <option value="Lagos">
+                        <option value="Abuja">
+                        <option value="Kaduna">
+                        <option value="Kano">
+                        <option value="Ibadan">
+                    </datalist>
+                    <div class="button">
+                        <button type="submit" class="next-button" >Next</button>
+                        <a href=" #" class="cancel">Cancel</a>
+                    </div>
+    </form>
+    
+
+
+
+    
+</body>
+</html>

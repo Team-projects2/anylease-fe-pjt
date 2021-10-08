@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lease/equipement details</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+        
+</head>
+<body>
+    <div class="lease-nav">
+        <p class="arrow">&#8592</p>
+        <p class="lease">Lease</p>
+    </div>
+    <span class="info-nav">
+        <p class="link active">Details</p>
+        <p class="link">Price & Location</p>
+        <p class="link">Upload</p>
+        <p class="link">Summary</p>
+    </span>
+    <form class="info-content" method="post" action="Price&location.html">
+        <label for="name">Name</label>
+        <input name="name" type="text" placeholder="Name of equipment" required/>
+        <label for="description">decription</label>
+        <input name="description" type="text" placeholder="Brief description of equipment" required/>
+        <label for="other">other</label>
+        <input name="other" type="text" placeholder="Optional details" required/>
+        <div class="button">
+            <button type="submit" class="next-button" onsubmit="moveToNext(1)">Next</button>
+            <a href=" #" class="cancel">Cancel</a>
+         </div>
+    </form>
+    
+
+
+
+    
+</body>
+</html>
